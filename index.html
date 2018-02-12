@@ -1,1 +1,18 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title></title><script src=https://res.wx.qq.com/open/js/jweixin-1.0.0.js></script><link href=./static/css/app.59afa5a7cef83e75d8c4357cc093cb97.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.19d55cbd789de189c631.js></script><script type=text/javascript src=./static/js/vendor.4d682d160e8abcbae274.js></script><script type=text/javascript src=./static/js/app.0aa42ceb16e7cd5b85bf.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title></title><script src=https://res.wx.qq.com/open/js/jweixin-1.0.0.js></script><link href=./static/css/app.59afa5a7cef83e75d8c4357cc093cb97.css rel=stylesheet></head><body><audio loop src=./static/media/music.f22331e.mp3 id=audio></audio><div id=app></div><script>document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+    }
+    audioAutoPlay();
+});</script><script type=text/javascript src=./static/js/manifest.963ebbb1500918ba315e.js></script><script type=text/javascript src=./static/js/vendor.4d682d160e8abcbae274.js></script><script type=text/javascript src=./static/js/app.22d4c688e7574189b7f7.js></script></body></html>
